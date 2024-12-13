@@ -6,6 +6,9 @@
 parameters:
 
 services:
+    guzzle:
+        class: GuzzleHttp\Client
+
     IdapGroup\HelixApiBundle\Service\HelixApiService:
         arguments:
             $client: '@guzzle'
